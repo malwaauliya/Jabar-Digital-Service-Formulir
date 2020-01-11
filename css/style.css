@@ -1,0 +1,270 @@
+body {
+    font-family: 'Lato';
+    box-sizing: border-box;
+}
+
+.form-register {
+    margin-top: 60px;
+    padding: 50px;
+    border: 1px solid #e8e8e8;
+    border-radius: 15px;
+    box-shadow: 0px 3px 7px #ddd;
+    border-top: 4px solid #1863d5;
+    border-bottom: 4px solid #ddd;
+}
+
+.form-register .title {
+    font-family: Poppins;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.form-register .title:after {
+    content: "";
+    width: 125px;
+    height: 4px;
+    background: #e4e4e4;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.form-register .title:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #e4e4e4;
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    border: 4px solid #fff;
+}
+
+.form-register .info {
+    margin-bottom: 6px;
+    color: #686868;
+    font-size: 14px;
+}
+
+.form-register form {
+    margin-top: 20px;
+}
+
+.form-register form .form-group {   
+    margin-bottom: 25px;
+}
+
+.form-register form .form-group > label {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    display: block;
+}
+
+.form-register form .form-group input[type=text],
+.form-register form .form-group input[type=number],
+.form-register form .form-group input[type=email],
+.form-register form .form-group textarea,
+.form-register form .form-group select{
+    border-radius: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Lato;
+}
+
+.form-register form .form-group .form-check{
+
+}
+
+.form-register form .form-group .form-check label {
+    font-size: 14px;
+}
+
+.form-register form .form-group .form-check input {
+    margin-left: 0px;
+    margin-top: 8px;
+}
+
+.list-riwayat-pekerjaan {
+
+}
+
+.single-riwayat {
+    padding-top: 0px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.single-riwayat-master {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.single-riwayat .remove-riwayat {
+    font-size: 14px;
+    padding: 2px 5px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px #989898;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.single-riwayat .col-md-4:last-child {
+    padding-right: 50px;
+}
+
+.single-riwayat-master .col-md-4:last-child {
+    padding-right: 15px;
+}
+
+.form-small-label {
+    position: relative;
+}
+
+.form-small-label label {
+    font-family: Poppins;
+    font-size: 12px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: #000;
+    border-bottom: 1px solid #0275d8;
+    display: block;
+}
+
+.form-small-label input {
+    padding-top: 35px;
+    font-size: 14px;
+    font-family: Lato;
+}
+
+#addWorkData {
+    margin-top: 15px;
+    padding: 8px 20px;
+    font-family: Poppins;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    background: #039e73;
+    border-color: #097f5e;
+    cursor: pointer;
+}
+
+.form-footer {
+    margin: 80px -50px -50px;
+    padding: 30px 50px;
+    background: #2b2b2b;
+    border-radius: 0px 0px 10px 10px;
+    text-align: right;
+}
+
+.form-footer button {
+    font-family: Poppins;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #000a13;
+    padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .form-page {
+        max-width: 100%;
+        margin-left: 0px;
+        -webkit-box-flex: unset;
+        -webkit-flex: unset;
+        -ms-flex: unset;
+        flex: none;
+    }
+    
+    .form-register {
+        padding: 50px 30px;
+    }
+
+    .form-footer {
+        margin: 80px -30px -50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-register {
+        padding: 35px 15px;
+        margin: 15px 0px;
+    }
+
+    .form-register .title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .input-born-date > div {
+        max-width: 100%;
+        margin-left: 0px;
+        -webkit-box-flex: unset;
+        -webkit-flex: unset;
+        -ms-flex: unset;
+        flex: none;
+        margin-bottom: 10px;
+    }
+
+    .single-riwayat {
+        padding: 35px 15px 15px;
+        border: 2px solid #ddd;
+    }
+    
+    .single-riwayat-master {
+        padding-top: 15px;
+    }
+
+    .single-riwayat .col-md-4 {
+        max-width: 100%;
+        margin-left: 0px;
+        -webkit-box-flex: unset;
+        -webkit-flex: unset;
+        -ms-flex: unset;
+        flex: none;
+        margin-bottom: 10px;
+    }
+
+    .single-riwayat .col-md-4:last-child {
+        margin-bottom: 0px;
+        padding-right: 15px;
+    }
+
+    .single-riwayat .remove-riwayat {
+        bottom: auto;
+        top: 5px;
+        right: 5px;
+    }
+
+    #addWorkData {
+        margin: 15px auto 0px;
+        display: block;
+    }
+
+    .form-footer {
+        text-align: center;
+        margin: 55px -15px -35px;
+    }
+}
