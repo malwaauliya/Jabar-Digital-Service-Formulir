@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Formulir Pendaftaran Online</title>
+
+    <meta name="description" content="Implementasi formulir pendaftaran online yang akan digunakan oleh pengguna dengan usia > 40 tahun">
+    <meta name="author" content="Malwa Auliya">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Poppins:400,500,700,900&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-sm-12 offset-md-2 form-page">
+				<div class="form-register">
+					<h3 class="title">Formulir Pendaftaran Online</h3>
+					<p class="info">Mohon isi formulir ini sesuai dengan data yang anda miliki.</p>
+					<form role="form" method="post">
+						<div class="form-group">
+							<label>Nama Lengkap *</label>
+							<input type="text" name="nama" placeholder="Contoh: Aditia" class="form-control" required />
+						</div>
+						<div class="form-group">
+							<label>Tanggal Lahir *</label>
+							<div class="row input-born-date">
+								<div class="col-md-3 col-sm-3">
+									<input type="number" name="tgllahir" maxlength="2" placeholder="1" class="form-control" required />
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<select class="form-control" name="bulanlahir" required>
+										<option value="">-- Bulan Lahir --</option>
+										<option value="01">Januari</option>
+										<option value="02">Februari</option>
+										<option value="03">Maret</option>
+										<option value="04">April</option>
+										<option value="05">Mei</option>
+										<option value="06">Juni</option>
+										<option value="07">Juli</option>
+										<option value="08">Agustus</option>
+										<option value="09">September</option>
+										<option value="10">Oktober</option>
+										<option value="11">November</option>
+										<option value="12">Desember</option>
+									</select>
+								</div>
+								<div class="col-md-3 col-sm-3">
+									<input type="number" name="thnlahir" maxlength="4" placeholder="1980" class="form-control" required />
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Jenis Kelamin *</label>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="jeniskelamin" id="jk_perempuan" value="p">
+								<label class="form-check-label" for="jk_perempuan">Perempuan</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="jeniskelamin" id="jk_lakilaki" value="l">
+								<label class="form-check-label" for="jk_lakilaki">Laki-laki</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Alamat Lengkap *</label>
+							<textarea name="alamat" placeholder="Contoh: Perumahan Indonesia Raya, Jl. Jakarta blok A45 no. 17, Coblone, Kota Bandung, Jawa Barat" class="form-control" rows="3" required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Daftar Riwayat Pekerjaan *</label>
+							<div class="list-riwayat-pekerjaan">
+								<div class="single-riwayat single-riwayat-master">
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+											<div class="form-small-label">
+												<label>Nama Perusahaan</label>
+												<input name="riwayat_perusahaan" class="form-control" placeholder="Contoh: PT Jasa Marga" required />
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="form-small-label">
+												<label>Posisi</label>
+												<input name="riwayat_posisi" class="form-control" placeholder="Contoh: Kepala Bagian Logistik" required />	
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="form-small-label">
+												<label>Masa Kerja</label>
+												<input name="riwayat_waktu" class="form-control" placeholder="Contoh: 1995-2020" required />	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" id="addWorkData" class="btn btn-primary"> <i class="fa fa-plus"></i> Tambah Riwayat </button>
+						</div>
+						<div class="form-footer">
+							<button type="submit" class="btn btn-primary"> <i class="fa fa-save"></i> Simpan </button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
